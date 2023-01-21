@@ -11,15 +11,16 @@ datasets:
 pages:
     - properties:
         margin: 10px
-      components:
-          - html: "<h1 style='margin-bottom: 20px'>Person by Age</h1>"
+      components:          
           - settings:
                 type: BARCHART
+                general:
+                    title: Ages
                 lookup:
                     uuid: hello
-                    group:
-                        - columnGroup:
-                              source: Column 0
-                          functions:
-                              - source: Column 0
-                              - source: Column 1
+          - settings:
+                type: PIECHART
+                general:
+                    title: Ages
+                lookup:
+                    uuid: hello    
