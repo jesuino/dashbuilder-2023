@@ -10,8 +10,10 @@ datasets:
           ]
 pages:
     - properties:
-        margin: 10px
-      components:          
+          margin: 10px
+      components:
+          - html: >-
+                <h1> Edited from VS Code</h1><hr/>
           - settings:
                 type: BARCHART
                 general:
@@ -23,4 +25,8 @@ pages:
                 general:
                     title: Ages
                 lookup:
-                    uuid: hello    
+                    uuid: hello
+          - settings:
+                component: table
+                lookup:
+                    uuid: hello
